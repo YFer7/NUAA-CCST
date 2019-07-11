@@ -8,6 +8,6 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}/测23145试</text>
+    <text class="user-motto">{{motto}}/测2345试</text>
   </view>
 </view>
