@@ -8,6 +8,6 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}/exe</text>
+    <text class="user-motto">{{motto}}/exeE</text>
   </view>
 </view>
