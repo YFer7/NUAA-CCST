@@ -1,0 +1,28 @@
+
+<button class="btn" bindtap="powerDrawer" data-statu="open">登陆</button>
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+
+  <view class="drawer_title">登陆</view>
+  <view class="drawer_content">
+    <view class="top grid">
+      <label class="title col-0">用户名：</label>
+      <input class="input_base input_h30 col-1" name="Name" ></input>
+    </view>
+    <view class="top grid">
+      <label class="title col-0">密码：</label>
+      <input class="input_base input_h30 col-1" name="mima" ></input>
+    </view>
+  </view>
+
+  <view class="xiugai" bindtap="f1">
+     <text>修改密码</text>
+  </view>
+  
+   
+  <view class="btn2">
+    <button class="btn_cancle" bindtap="powerDrawer" data-statu="close">取消</button>
+    <button class="btn_denglu" bindtap="tijiao" >登录</button>
+  </view>
+</view>
+
+<button bindtap="clicked">查看我的志愿时长</button>

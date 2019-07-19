@@ -1,13 +1,34 @@
 {
   "pages": [
+    "pages/about/about",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/work/work",
+    "pages/about/check/check",
+    "pages/about/change/change"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "石榴园青协",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+
+      {
+        "pagePath": "pages/work/work",
+        "text": "首页",
+        "iconPath": "image/wo.jpg",
+        "selectedIconPath": "image/work.jpg"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "image/about.jpg",
+        "selectedIconPath": "image/ab.jpg"
+      }
+    ]
+  }
 }
