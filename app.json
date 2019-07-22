@@ -5,7 +5,8 @@
     "pages/logs/logs",
     "pages/work/work",
     "pages/about/check/check",
-    "pages/about/change/change"
+    "pages/about/change/change",
+    "pages/publish/publish"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,6 +16,7 @@
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
+    "backgroundColor" : "F6F6F6",
     "list": [
 
       {

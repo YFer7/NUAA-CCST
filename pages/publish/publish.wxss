@@ -1,0 +1,18 @@
+/* pages/publish/publish.wxss */
+@import "../../utils/weui.wxss";
+
+.page-section{
+  margin-bottom: 20rpx;
+}
+.picker{
+    margin-bottom: 20rpx;
+    padding: 13px;
+    border-top-color: black;
+    border-bottom-color: black;
+    font-size: 40rpx;
+    background-color: rgb(255, 255, 255);
+}
+textarea {
+  width: 700rpx;
+  padding: 25rpx 0;
+}

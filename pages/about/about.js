@@ -16,7 +16,12 @@ f1:function()
     })
 },
 
-
+  publish: function (){
+    wx.navigateTo({
+      url: '../publish/publish',
+    })
+  }
+  ,
   clicked: function (options) 
   {
     wx.navigateTo({

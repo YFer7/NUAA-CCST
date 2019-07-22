@@ -1,0 +1,80 @@
+<!--pages/publish/publish.wxml-->
+<view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">活动名称：</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" bindblur="pullActivityName" confirm-type="done" auto-focus placeholder="请输入活动名称。"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">活动地址：</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" bindblur="pullActivityPlace" confirm-type="done"  placeholder="请输入活动地址。"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">日期选择器</view>
+    <picker mode="date" value="{{date}}" start="1999-01-01" end="2077-07-07" bindchange="bindDateChange">
+      <view class="picker">
+        当前选择: {{date}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">活动负责人：</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  bindblur="pullActivityLeader" confirm-type="done" placeholder="请输入负责人名称。"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">联系人电话：</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" bindblur="pullActivityLeaderPhone" confirm-type="done" type="number" placeholder="请输入联系电话。" />
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">招募人数：</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" bindblur="pullActivityRecruitmentNumber" confirm-type="done" type="number" placeholder="请输入招募人数。" />
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">活动简介：</view>
+    <view class="weui-cells weui-cells_after-title">
+     <textarea bindblur="bindTextAreaBlur1" placeholder="  活动简介。" name="textarea"/>
+    </view> 
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">活动内容：</view>
+    <view class="weui-cells weui-cells_after-title">
+     <textarea bindblur="bindTextAreaBlur2" placeholder="  活动内容。" name="textarea"/>
+    </view> 
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">报名要求：</view>
+    <view class="weui-cells weui-cells_after-title">
+     <textarea bindblur="bindTextAreaBlur3" placeholder="  报名要求。" name="textarea"/>
+    </view> 
+  </view>
+</view>
+<view><text>{{test}}</text>
+
+</view>

@@ -26,3 +26,4 @@
 </view>
 
 <button bindtap="clicked">查看我的志愿时长</button>
+<button bindtap="publish">志愿活动发布</button>
