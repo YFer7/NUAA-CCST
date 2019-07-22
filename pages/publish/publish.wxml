@@ -4,7 +4,7 @@
     <view class="weui-cells__title">活动名称：</view>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell weui-cell_input">
-        <input class="weui-input" bindblur="pullActivityName" confirm-type="done" auto-focus placeholder="请输入活动名称。"/>
+        <input class="weui-input" bindblur="pullActivityName" confirm-type="done" placeholder="请输入活动名称。"/>
       </view>
     </view>
   </view>
@@ -75,6 +75,4 @@
     </view> 
   </view>
 </view>
-<view><text>{{test}}</text>
-
-</view>
+<button bindtap="button" >提交</button>

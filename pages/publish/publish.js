@@ -66,6 +66,14 @@ Page({
       date: e.detail.value
     })
   },
+  button:function() {
+      console.log('数据提交及页面跳转相关内容有待完善')
+      /*
+      wx.redirectTo({
+        url: '',
+      })
+      */
+  },
   /**
    * 生命周期函数--监听页面加载
    */
