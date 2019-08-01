@@ -38,4 +38,4 @@
 
 <button bindtap="clicked">查看我的志愿时长</button>
 <button bindtap="publish">志愿活动发布</button>
-
+<button bindtap="test">登陆（开发中）</button>

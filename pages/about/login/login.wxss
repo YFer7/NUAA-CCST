@@ -1,0 +1,41 @@
+  .header{
+         margin-top: -40px;
+         margin-bottom: 40px;
+        }
+        form{
+         width: 80%;
+         border: 1px solid #999;
+         padding: 0 10px;
+        }
+        .section{
+          margin:50rpx auto;
+
+         }
+         input{
+          border: 1px solid #000;
+          height: 35px;
+        }
+        .mybtn{
+          width: 60%;
+          margin-top: 40px;
+
+        }
+  
+.login-icon{
+  flex: none;
+  margin: 10 auto;
+  margin-top: 100rpx;
+}
+
+.xiugai
+{
+  position: absolute;
+  top:30rpx;
+  right:20rpx;
+  font-size: 26rpx;
+  font-style: italic;
+  border: 1px solid blue;
+  border-right:0;
+  border-radius: 10%;
+  
+}

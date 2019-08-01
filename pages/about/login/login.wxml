@@ -1,0 +1,35 @@
+<view class='container'>
+       <view class='header'>
+           <image class="login-img" src="/image/ab.jpg"></image> 
+       </view>
+       <form bindsubmit='formSubmit' bindreset='formReset'>
+         <view class='section'>
+           <text>学号：</text>
+           <input  placeholder="学号" 
+            value="{{username}}"
+            bindinput="inputhange" 
+            data-prop = 'username'/>
+         </view>
+         <view class='section'>
+           <text>密码：</text>
+           <input  
+            type="password" 
+            placeholder="初始密码为111" 
+            value="{{ password }}" 
+            bindinput="inputChange" 
+            data-prop = 'password'/>
+         </view>  
+
+          <view class="xiugai" bindtap="f1">
+          <text>修改密码</text>
+          </view>
+
+         <view class='section'>
+           <button type='primary'  form-type='submit' class='mybtn'>登录</button>
+         </view>  
+       </form>
+     </view>
+
+     
+  
+ 

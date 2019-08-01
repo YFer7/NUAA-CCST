@@ -6,7 +6,10 @@
     "pages/work/work",
     "pages/about/check/check",
     "pages/about/change/change",
-    "pages/publish/publish"
+    "pages/publish/publish",
+    "pages/about/login/change1/change1",
+    "pages/about/login/login"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

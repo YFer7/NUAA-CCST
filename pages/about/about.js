@@ -16,15 +16,15 @@ inputChange: function(e)
 
 tijiao:function(options)
 {
-  var that = this;//=====注意此处，要用that 指代this=====
+  var that = this;//=====注意此处，要用that 指代this===== 
   wx.request({
-    url: '', //服务器地址
+    url: '', //服务器地址 
     data: {
-      userName: username,//请求参数
-      passWord: password//请求参数
+      userName: username,//请求参数 
+      passWord: password//请求参数 
     },
-    method: 'POST',// OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-    header: {// 设置请求的 header
+    method: 'POST',// OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT 
+    header: {// 设置请求的 header 
       'content-type': 'application/x-www-form-urlencoded'
     },
     success: function (res) {
@@ -37,8 +37,8 @@ tijiao:function(options)
     },
     complete: function (res) {
       console.log('submit complete');
-    } 
-  })  
+    }
+  })   
      
 }
 ,
@@ -59,6 +59,12 @@ f1:function()
   }
   ,
 
+  test: function()
+  {
+    wx.navigateTo({
+      url: '../about/login/login',
+    })
+  },
 
 
   clicked: function (options) 
