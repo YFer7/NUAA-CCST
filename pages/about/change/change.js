@@ -3,12 +3,7 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-     username : '',
-     oldmima : '',
-     newmima : '',
-     querenmima : ''
-  },
+
 
   /**
    * 生命周期函数--监听页面加载
@@ -73,12 +68,11 @@ Page({
   },
 
   formSubmit: function (e) {
-     this.setData({
-      username : e.detail.value.name,
-      oldmima : e.detail.value.oldmima,
-      newmima : e.detail.value.newmima,
-      querenmima : e.detail.value.querenmima
-     })
+  
+      var username = e.detail.value.name
+      var oldmima = e.detail.value.oldmima
+      var newmima = e.detail.value.newmima
+      var querenmima = e.detail.value.querenmima
      
     if (oldmima == '' || newmima == '' || querenmima == '') {
       wx.showToast({
@@ -97,7 +91,7 @@ Page({
       wx.request({
         url: '',
         data: {
-        username:name,
+        username:username,
         oldmima:oldmima,
         newmima :newmima,
         querenmima :querenmima
