@@ -61,5 +61,22 @@ Page({
    */
   onShareAppMessage: function () {
     
+
+  },
+
+  data:{
+      zhiyuanList:[
+        {
+          activityName:"青协啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+            hours:1.5 ,
+        },
+        {
+          activityName:"志愿",
+          hours:2.5,
+        }
+      ]
+
+
+
   }
 })

@@ -4,7 +4,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+     username : '',
+     oldmima : '',
+     newmima : '',
+     querenmima : ''
   },
 
   /**
@@ -67,5 +70,56 @@ Page({
     wx.navigateBack({
       delta: 1,
     })
+  },
+
+  formSubmit: function (e) {
+     this.setData({
+      username : e.detail.value.name,
+      oldmima : e.detail.value.oldmima,
+      newmima : e.detail.value.newmima,
+      querenmima : e.detail.value.querenmima
+     })
+     
+    if (oldmima == '' || newmima == '' || querenmima == '') {
+      wx.showToast({
+        title: '密码不能为空',
+        icon: 'none',
+        duration: 1000
+      })
+    } else if (newmima != querenmima) {
+      wx.showToast({
+        title: '两次密码输入不一样',
+        icon: 'none',
+        duration: 1000
+      })
+    }else{
+
+      wx.request({
+        url: '',
+        data: {
+        username:name,
+        oldmima:oldmima,
+        newmima :newmima,
+        querenmima :querenmima
+        },
+        method: 'POST',
+        header: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        success: function (res) {
+          //console.log(res.data)
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 2000,
+          })
+
+        }
+      })
+
+    }
+
+    
   }
+
 })

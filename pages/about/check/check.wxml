@@ -1,1 +1,25 @@
+
 <text>查看</text>
+
+
+
+
+<view class="check">
+  <view class="title">
+    <text>志愿名称</text>
+    <text>志愿时长</text>
+  </view>
+  <text>_________________________________________________________________</text>
+  <view  wx:for="{{zhiyuanList}}">
+   <view class="zhiyuan">
+    <text class="name">{{item.activityName}}</text>
+    <text class="h">{{item.hours}}</text>
+   </view>
+    <text>_________________________________________________________________</text>
+  </view>
+
+
+</view> >
+
+ <view class="divLine"></view>
+

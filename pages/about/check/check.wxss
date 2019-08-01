@@ -1,0 +1,29 @@
+.title{
+  display: flex;
+  width: 100%;
+  font: 50rpx "microsoft yahei";
+  justify-content:space-around; 
+}
+.zhiyuan{
+  display: flex;
+  width: 100%;
+  justify-content:space-around; 
+}
+.name{
+  width: 80px;
+  color: blue;
+}
+.h{
+  color: yellowgreen;
+}
+.check{
+  flex-direction: column;
+}
+ .divLine{
+ background: black;
+ height: 100%;
+ width: 5rpx;
+ left: 375rpx; 
+
+
+}

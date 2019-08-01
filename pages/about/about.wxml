@@ -6,11 +6,22 @@
   <view class="drawer_content">
     <view class="top grid">
       <label class="title col-0">用户名：</label>
-      <input class="input_base input_h30 col-1" name="Name" ></input>
+      <input 
+      class="input_base input_h30 col-1" 
+      placeholder="学号" 
+      value="{{username}}"
+      bindinput="inputhange" 
+      data-prop = 'username'/>
     </view>
     <view class="top grid">
       <label class="title col-0">密码：</label>
-      <input class="input_base input_h30 col-1" name="mima" ></input>
+      <input 
+      class="input_base input_h30 col-1" 
+      type="password" 
+      placeholder="初始密码为111" 
+      value="{{ password }}" 
+      bindinput="inputChange" 
+      data-prop = 'password'/>
     </view>
   </view>
 
@@ -27,3 +38,4 @@
 
 <button bindtap="clicked">查看我的志愿时长</button>
 <button bindtap="publish">志愿活动发布</button>
+

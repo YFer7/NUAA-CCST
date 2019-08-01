@@ -1,23 +1,23 @@
 
-<form class="change">
+<form bindsubmit="formSubmit"  class="change">
 
     <view class="top grid">
       <label class="title col-0">用户名：</label>
-      <input class="input_base input_h30 col-1" name="Name" ></input>
+      <input class="input_base input_h30 col-1" name="name" ></input>
     </view>
     
     <view class="top grid">
       <label class="title col-0">旧密码：</label>
-      <input class="input_base input_h30 col-1" name="oldmima" ></input>
+      <input class="input_base input_h30 col-1" type="password" name="oldmima" ></input>
     </view>
     
     <view class="top grid">
       <label class="title col-0">新密码：</label>
-      <input class="input_base input_h30 col-1" name="newmima" ></input>
+      <input class="input_base input_h30 col-1"  type="password" name="newmima" ></input>
     </view>
     <view class="top grid">
       <label class="title col-0">确认密码：</label>
-      <input class="input_base input_h30 col-1" name="querenmima" ></input>
+      <input class="input_base input_h30 col-1" type="password" name="querenmima" ></input>
     </view>
     <view>
         <button form-type='submit'>确认</button>
