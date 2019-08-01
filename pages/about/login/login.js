@@ -51,5 +51,46 @@ Page({
   powerDrawer: function (e) {
     var currentStatu = e.currentTarget.dataset.statu;
     this.util(currentStatu)
+  },
+
+  formSubmit: function (e) {
+
+    var username = e.detail.value.username
+    var password = e.detail.value.password
+  
+
+    if (username == '' || password == '' ) {
+      wx.showToast({
+        title: '用户名或密码不能为空',
+        icon: 'none',
+        duration: 1000
+      })
+    } else {
+
+      wx.request({
+        url: '',
+        data: {
+          username: username,
+          password: password
+        },
+        method: 'POST',
+        header: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        success: function (res) {
+          //console.log(res.data)
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 2000,
+          })
+
+        }
+      })
+
+    }
+
+
   }
+
 })

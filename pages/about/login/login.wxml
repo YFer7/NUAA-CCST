@@ -6,18 +6,14 @@
          <view class='section'>
            <text>学号：</text>
            <input  placeholder="学号" 
-            value="{{username}}"
-            bindinput="inputhange" 
-            data-prop = 'username'/>
-         </view>
+            name="username"/>
+          </view>
          <view class='section'>
            <text>密码：</text>
            <input  
             type="password" 
             placeholder="初始密码为111" 
-            value="{{ password }}" 
-            bindinput="inputChange" 
-            data-prop = 'password'/>
+            name="password"/>
          </view>  
 
           <view class="xiugai" bindtap="f1">
