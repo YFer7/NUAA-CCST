@@ -1,2 +1,54 @@
-<!--pages/work/work.wxml-->
 
+ 
+<view class="selection">
+  <view class="mod-test">可报名的活动</view>
+<!-- 实现幻灯片 -->
+<!-- <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000"> -->
+<swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000" indicator-active-color="{{bg}}" style='height:{{Hei}}'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <!-- <image src="{{item}}" class="slide-image" width="640" height="320"/> -->
+       <image src="{{item}}" class="slide-image" mode="widthFix" bindload='imgH'/>   
+       <!-- bindload是绑定图片加载的事件,记得给image加上mode=“widthFix”这个属性哦，还有就是设置这个image 100%宽度 -->
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+
+
+<view class="selection">
+<!-- 实现事件按钮 -->
+  <view wx:for="{{event}}">
+    <!-- <button class="btn" bindtap="powerDrawer" data-statu="open">{{item.name}}</button> -->
+  <button class="btn" bindtap='eventpage' data-statu="open">{{item.name}}</button>
+    <!-- <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}"> -->
+  </view>
+<!-- 实现消息框弹出 -->
+  <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+
+    <view class="drawer_title">志愿活动报名</view>
+    <view class="drawer_content">
+      <view class="top grid">
+        <label class="title col-0">姓名：</label>
+        <input class="input_base input_h30 col-1" name="Name" ></input>
+      </view>
+
+      <view class="top grid">
+        <label class="title col-0">学号：</label>
+        <input class="input_base input_h30 col-1" name="mima" ></input>
+      </view>
+
+      <view class="top grid">
+        <label class="title col-0">报名时间段：</label>
+        <input class="input_base input_h30 col-1" name="time" ></input>
+      </view>
+    </view>
+    
+    <view class="btn2">
+      <button class="btn_cancle" bindtap="powerDrawer" data-statu="close">报名</button>
+      <button class="btn_denglu" bindtap="tijiao" >取消</button>
+    </view>
+  </view>
+  
+</view>

@@ -1,3 +1,4 @@
+/* pages/eventpage/eventpage.wxss */
 .mod-test {
   display: flex;
   flex-direction: column;
@@ -7,6 +8,12 @@
   border-left-color:blueviolet ;
   border-left-style: solid;
 }
+
+.test{
+    font-size: 10px;
+    color: grey;
+}
+
 
 /*mask*/
 .drawer_screen {
@@ -56,7 +63,7 @@
   height: 120px;
   overflow-y: scroll; /*超出父盒子高度可滚动*/
 }
-.btn_cancle{
+.baoming{
   width: 300rpx;
   padding: 10px;
   font: 20px "microsoft yahei";
@@ -64,7 +71,7 @@
   border-top: 1px solid #E8E8EA;
   color: rgb(36, 197, 31);
 }
-.btn_denglu{
+.quxiao{
   width: 300rpx;
   padding: 10px;
   font: 20px "microsoft yahei";
@@ -119,5 +126,25 @@ radio{
 }
 
 .btn{
-  color: blueviolet;
+  width: 300rpx;
+  padding: 10px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+  border-top: 1px solid #E8E8EA;
+  color:green;
 }
+
+.add_btn{
+    width: 100%;
+    position: fixed;
+    bottom: 30rpx;
+}
+
+/* .btnback{
+  width: 300rpx;
+  padding: 10px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+  border-top: 1px solid #E8E8EA;
+  color: rgba(247, 36, 36, 0.534);
+} */

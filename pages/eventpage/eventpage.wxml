@@ -1,0 +1,59 @@
+<view class="selection">
+  <view class="mod-test">活动详情</view>
+
+</view>
+
+<text>\n</text>
+
+<!-- 具体的活动内容是后台给的数据 -->
+<view class="selection">
+  <view>活动名称</view>
+    <text>\n</text>
+     <view class="test">某某活动</view>
+
+</view>
+<text>\n</text>
+<view class="selection">
+  <view>需要的志愿者人数以及时间段</view>
+  <text>\n</text>
+    <view class="test">某月某日     某工作       几人</view>
+    <view class="test">某月某日     某工作       几人</view>
+    <view class="test">某月某日     某工作       几人</view>
+
+</view>
+
+<view class="selection">
+
+    <view class='add_btn'>
+      <button class="btn" bindtap="powerDrawer" data-statu="open">我要报名</button>
+      <!-- <button class="btnback" bindtap='work' data-statu="open">返回</button> -->
+    </view>
+
+<!-- 实现消息框弹出 -->
+  <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+
+    <view class="drawer_title">志愿活动报名</view>
+    <view class="drawer_content">
+      <view class="top grid">
+        <label class="title col-0">姓名：</label>
+        <input class="input_base input_h30 col-1" name="Name" ></input>
+      </view>
+
+      <view class="top grid">
+        <label class="title col-0">学号：</label>
+        <input class="input_base input_h30 col-1" name="mima" ></input>
+      </view>
+
+      <view class="top grid">
+        <label class="title col-0">报名时间段：</label>
+        <input class="input_base input_h30 col-1" name="time" ></input>
+      </view>
+    </view>
+    
+    <view class="btn2">
+      <button class="baoming" bindtap="powerDrawer" data-statu="close">报名</button>
+      <button class="quxiao" bindtap="tijiao" >取消</button>
+    </view>
+  </view>
+
+</view>
