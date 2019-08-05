@@ -1,0 +1,30 @@
+
+
+
+<form bindsubmit="formSubmit"  class="change">
+
+    <view class="warn">
+      <text class="warning">请认真核对用户名为学号，提交后将不予更改</text>
+    </view>
+
+
+    <view class="top grid">
+      <label class="title col-0">用户名：</label>
+      <input class="input_base input_h30 col-1" name="name"  placeholder="请输入学号" ></input>
+    </view>
+    
+    <view class="top grid">
+      <label class="title col-0">密码：</label>
+      <input class="input_base input_h30 col-1"  type="password" name="mima" ></input>
+    </view>
+
+    <view class="top grid">
+      <label class="title col-0">确认密码：</label>
+      <input class="input_base input_h30 col-1" type="password" name="querenmima" ></input>
+    </view>
+    <view>
+        <button form-type='submit'>确认</button>
+         <button class="cancle"  bindtap="f0">取消</button>
+    </view>
+
+</form>

@@ -1,0 +1,49 @@
+.change {
+
+  background-color: #eee;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+   align-items: center; 
+}
+.warn{
+    width: 100%;
+    align-items: center; 
+    color: red;
+    font-size: 30rpx;
+    position: absolute;
+    top:100rpx;
+    left: 70rpx;
+}
+.input_base {
+    border: 2rpx solid #ccc;
+    padding-left: 10rpx;
+    margin-right: 50rpx;
+}
+.input_h30{
+    height: 30rpx;
+    line-height: 30rpx;
+}
+.input_view{
+    font: 12px "microsoft yahei";
+    background: #fff;
+    color:#000;
+    line-height: 30rpx;
+}
+input {
+    font: 12px "microsoft yahei";
+    background: #fff;
+    color:#000 ;
+    width: 450rpx;
+    height: 400rpx;
+    line-height: 400rpx;
+    margin: 40rpx 0px;
+}
+button{
+  float: left;
+  font-size: 40rpx;
+  margin-left: 55rpx;
+  background-color: gba(31, 42, 197, 0.534);
+}

@@ -1,18 +1,14 @@
 <view class='container'>
        <view class='header'>
-           <image class="login-img" src="/image/ab.jpg"></image> 
+           <image class="login-img" src="/image/mmexport1539605676500.jpg"></image> 
        </view>
        <form bindsubmit='formSubmit' bindreset='formReset'>
          <view class='section'>
-           <text>学号：</text>
-           <input  placeholder="学号" 
+          <input  placeholder="学号" 
             name="username"/>
-          </view>
-         <view class='section'>
-           <text>密码：</text>
            <input  
             type="password" 
-            placeholder="初始密码为111" 
+            placeholder="密码" 
             name="password"/>
          </view>  
 
@@ -20,8 +16,10 @@
           <text>修改密码</text>
           </view>
 
-         <view class='section'>
-           <button type='primary'  form-type='submit' class='mybtn'>登录</button>
+         <view class='mybtn'>
+           <button   form-type='submit' class='mybtn1'>登录</button>
+           <button   bindtap="f000" class='mybtn2'>注册</button>
+
          </view>  
        </form>
      </view>

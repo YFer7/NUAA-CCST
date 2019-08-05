@@ -8,8 +8,9 @@
     "pages/about/change/change",
     "pages/publish/publish",
     "pages/about/login/change1/change1",
-    "pages/about/login/login"
-
+    "pages/about/login/login",
+    "pages/about/zhuce/zhuce"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

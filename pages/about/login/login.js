@@ -41,7 +41,13 @@ Page({
   }
   ,
 
-
+  f000:function()
+  {
+      wx.navigateTo({
+        url: 'zhuce/zhuce',
+      })
+  }
+  ,
   f1: function () {
     wx.navigateTo({
       url: 'change1/change1',

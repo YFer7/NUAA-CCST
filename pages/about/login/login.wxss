@@ -1,10 +1,19 @@
+  .container{
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+   align-items: center; 
+  }
+  
   .header{
-         margin-top: -40px;
-         margin-bottom: 40px;
+         /* margin-top: -40px;
+         margin-bottom: 40px; */
+         font-size: 40px;
         }
         form{
          width: 80%;
-         border: 1px solid #999;
          padding: 0 10px;
         }
         .section{
@@ -12,15 +21,37 @@
 
          }
          input{
-          border: 1px solid #000;
+          border: 1px solid #E8E8EA;
           height: 35px;
+          margin-right: 20rpx;
+          justify-content: space-around;
         }
         .mybtn{
-          width: 60%;
-          margin-top: 40px;
-
+            width: 80%;
+            margin-top: 40px;
+            position: relative;
+            left: -60rpx;
+            margin:50rpx auto;
+            justify-content: space-around;
         }
-  
+  .mybtn1{
+    width: 580rpx;
+    padding: 10px;
+    font: 20px "microsoft yahei";
+    text-align: center;
+    border-top: 1px solid #E8E8EA;
+    color: black;
+    background-color: green;
+    
+  }
+  .mybtn2{
+    width:580rpx;
+    padding: 10px;
+    font: 20px "microsoft yahei";
+    text-align: center;
+    border-top: 1px solid #E8E8EA;
+    color: black;
+  }
 .login-icon{
   flex: none;
   margin: 10 auto;
@@ -38,4 +69,9 @@
   border-right:0;
   border-radius: 10%;
   
+}
+.login-img{
+  width: 600rpx;
+  height: 400rpx;
+  border-radius: 10%;
 }

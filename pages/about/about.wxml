@@ -1,3 +1,5 @@
+<button bindtap="fff">注册</button>
+
 
 <button class="btn" bindtap="powerDrawer" data-statu="open">登陆</button>
 <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">

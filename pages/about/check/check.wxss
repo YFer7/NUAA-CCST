@@ -19,11 +19,9 @@
 .check{
   flex-direction: column;
 }
- .divLine{
+ /* .divLine{
  background: black;
  height: 100%;
  width: 5rpx;
  left: 375rpx; 
-
-
-}
+} */

@@ -43,7 +43,13 @@ tijiao:function(options)
 }
 ,
 
-
+fff:function()
+{
+    wx.navigateTo({
+      url: 'zhuce/zhuce',
+    })
+}
+,
 f1:function()
 {
     wx.navigateTo({
