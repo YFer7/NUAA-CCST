@@ -66,8 +66,38 @@ Page({
       date: e.detail.value
     })
   },
-  button:function() {
-      console.log('数据提交及页面跳转相关内容有待完善')
+  button:function(options) {
+    var that = this;//=====注意此处，要用that 指代this===== 
+    wx.request({
+      url: '', //服务器地址 
+      data: {
+        activity_Name : activityName.join(),
+        activity_Place : activityPlace.join(),
+        activity_Leader : activityLeader.join(),
+        activity_LeaderPhone : activityLeaderPhone.join(),
+        activity_RecruitmentNumber: activityRecruitmentNumber.join(),
+        bind_TextAreaBlur1: bindTextAreaBlur1.join(),
+        bind_TextAreaBlur2: bindTextAreaBlur2.join(),
+        bind_TextAreaBlur3: bindTextAreaBlur3.join()
+      },
+      method: 'POST',// OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT 
+      header: {// 设置请求的 header 
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      success: function (res) {
+        wx.showToast({
+          title: res.data.msg,
+          icon: 'none',
+          duration: 2000,
+        })
+      },
+      fail: function (res) {
+        console.log('submit fail');
+      },
+      complete: function (res) {
+        console.log('submit complete');
+      }
+    })
       /*
       wx.redirectTo({
         url: '',

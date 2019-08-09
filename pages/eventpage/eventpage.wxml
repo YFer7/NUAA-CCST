@@ -24,8 +24,9 @@
 
 <view class="selection">
 
-    <view class='add_btn'>
+    <view class="view_class">
       <button class="btn" bindtap="powerDrawer" data-statu="open">我要报名</button>
+      <button  class="btn" bindtap="readyPeople" data-statu="open">已报人员</button>
       <!-- <button class="btnback" bindtap='work' data-statu="open">返回</button> -->
     </view>
 
@@ -51,8 +52,8 @@
     </view>
     
     <view class="btn2">
-      <button class="baoming" bindtap="powerDrawer" data-statu="close">报名</button>
-      <button class="quxiao" bindtap="tijiao" >取消</button>
+      <button  class="baoming" bindtap="tijiao" >报名</button> 
+        <button  class="quxiao" bindtap="powerDrawer" data-statu="close">取消</button> 
     </view>
   </view>
 

@@ -45,9 +45,9 @@ tijiao:function(options)
 
 
 
-  publish: function (){
+  publish: function () {
     wx.navigateTo({
-      url: '../publish/publish',
+      url: '../admin/admin',
     })
   }
   ,

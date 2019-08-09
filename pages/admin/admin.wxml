@@ -1,0 +1,3 @@
+<!--pages/admin/admin.wxml-->
+
+<button bindtap="publish">志愿活动发布</button>
